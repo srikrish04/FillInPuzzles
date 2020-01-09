@@ -1,0 +1,22 @@
+Test Cases
+
+loadPuzzle:
+-----------
+ - invoke loadPuzzle with null as input
+ - invoke loadPuzzle with word in the first line.
+ - invoke loadPuzzle with number of words higher than mentioned indexes and orientation.
+ - invoke with empty file.
+ - invoke loadPuzzle with number of words less than mentioned indexes.
+ - invoke loadPuzzle with one word with length higher or less than specified.
+ - invoke loadPuzzle with number of words equals than of mentioned indexes.
+ 
+ solve:
+ ------
+ - invoke solve after invoking loadPuzzle.
+ - invoke solve before invoking loadPuzzle.
+ - invoke solve after loadPuzzle return false.
+ 
+ Print:
+ - invoke print after puzzle is solved.
+ - invoke print without solving the puzzle.
+ - invoke print before calling loadPuzzle.
